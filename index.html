@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Coopers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
+    <style>
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      html, body { height: 100%; background: #f0eee9; }
+      body {
+        font-family: 'Inter', -apple-system, system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      #root { height: 100%; }
+
+      @keyframes screenSlideIn {
+        from { transform: translateX(100%); opacity: 0.4; }
+        to   { transform: translateX(0);    opacity: 1;   }
+      }
+      @keyframes screenSlideOut {
+        from { transform: translateX(0);     opacity: 1;   }
+        to   { transform: translateX(-30%);  opacity: 0.3; }
+      }
+      @keyframes screenSlideBack {
+        from { transform: translateX(-100%); opacity: 0.4; }
+        to   { transform: translateX(0);     opacity: 1;   }
+      }
+      .screen-forward  { animation: screenSlideIn  0.28s cubic-bezier(0.25,0.46,0.45,0.94) both; }
+      .screen-back     { animation: screenSlideBack 0.28s cubic-bezier(0.25,0.46,0.45,0.94) both; }
+      .screen-instant  { animation: none; }
+
+      ::-webkit-scrollbar { display: none; }
+      * { scrollbar-width: none; }
+    </style>
+    <script type="module" crossorigin src="/coopers-app/assets/index-B5xg5auh.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
