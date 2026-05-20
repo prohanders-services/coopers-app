@@ -2,3 +2,14 @@ node_modules/
 dist/
 .env
 scripts/service-account.json
+.netlify/
+CONTEXT.md
+chats/
+project/
+scripts/
+coopers-app.html
+coopers-dist.zip
+index.deploy.html
+downloader.html
+*.zip
+README.md
